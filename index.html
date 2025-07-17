@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма з усіма типами input</title>
+</head>
+<body>
+
+  <h1>Анкета користувача</h1>
+
+  <form action="#" method="post">
+    <label>Ваше ім'я:
+      <input type="text" name="username" placeholder="Введіть ім'я" required>
+    </label><br><br>
+
+    <label>Пароль:
+      <input type="password" name="password" required>
+    </label><br><br>
+
+    <label>Email:
+      <input type="email" name="email" placeholder="example@gmail.com">
+    </label><br><br>
+
+    <label>Телефон:
+      <input type="tel" name="phone" placeholder="+380...">
+    </label><br><br>
+
+    <label>Ваш вік:
+      <input type="number" name="age" min="1" max="120">
+    </label><br><br>
+
+    <label>Ваш сайт:
+      <input type="url" name="website" placeholder="https://">
+    </label><br><br>
+
+    <label>Пошук:
+      <input type="search" name="search">
+    </label><br><br>
+
+    <label>Дата народження:
+      <input type="date" name="birthdate">
+    </label><br><br>
+
+    <label>Дата і час зустрічі:
+      <input type="datetime-local" name="meeting">
+    </label><br><br>
+
+    <label>Улюблений місяць:
+      <input type="month" name="favmonth">
+    </label><br><br>
+
+    <label>Тиждень року:
+      <input type="week" name="week">
+    </label><br><br>
+
+    <label>Час зустрічі:
+      <input type="time" name="time">
+    </label><br><br>
+
+    <label>Улюблений колір:
+      <input type="color" name="color">
+    </label><br><br>
+
+    <label>
+      <input type="checkbox" name="subscribe"> Підписатись на розсилку
+    </label><br><br>
+
+    <p>Оберіть стать:</p>
+    <label><input type="radio" name="gender" value="male"> Чоловіча</label>
+    <label><input type="radio" name="gender" value="female"> Жіноча</label><br><br>
+
+    <label>Оцініть сайт (0-10):
+      <input type="range" name="rating" min="0" max="10">
+    </label><br><br>
+
+    <label>Завантажити фото:
+      <input type="file" name="avatar">
+    </label><br><br>
+
+    <input type="hidden" name="form_id" value="anketa_001">
+
+    <div style="margin-top:10px;">
+      <input type="submit" value="Відправити">
+      <input type="reset" value="Очистити">
+      <input type="button" value="Просто кнопка" >
+    </div>
+
+  </form>
+
+</body>
+</html>
